@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Portfolio Website",
     image: portfolio,
-    github: "https://github.com/Hari-git04/myportfolio",
+    github: "https://github.com/Hari-git04/my-portfolio",
     live: "https://harigatten-portfolio.vercel.app/",
   },
 ];
@@ -53,7 +53,7 @@ const Projects = () => {
                   className="w-full h-full object-cover bg-gray-100"
                 />
 
-                {/* Overlay on hover */}
+                
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 p-4">
                   <p className="text-white text-sm sm:text-base font-semibold text-center line-clamp-2 mb-2">
                     {project.title}
@@ -63,7 +63,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()} // ✅ prevents modal open
+                      onClick={(e) => e.stopPropagation()} 
                       className="px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm bg-white text-black font-semibold rounded-lg hover:bg-gray-200 hover:scale-105 active:scale-95 transition duration-200"
                     >
                       View Code
@@ -72,7 +72,7 @@ const Projects = () => {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()} // ✅ prevents modal open
+                      onClick={(e) => e.stopPropagation()}
                       className="px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 hover:scale-105 active:scale-95 transition duration-200"
                     >
                       Live Project
@@ -84,7 +84,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Modal for viewing project image */}
+      
         {selectedProject && (
           <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 p-4 overflow-auto">
             <div className="relative max-w-3xl w-full">
