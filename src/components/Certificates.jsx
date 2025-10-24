@@ -4,7 +4,7 @@ import pythonImg from "../assets/python.jpg";
 import mernCourseImg from "../assets/merncourse.jpg";
 import reactCourseImg from "../assets/reactcourse.jpg";
 import css from "../assets/css-certificate.jpg";
-import english from "../assets/English-certificate.jpg";
+import english from "../assets/English-Certificate.jpg";
 import accenture from "../assets/accenture.png.jpg";
 import tata from "../assets/tata.jpg";
 
