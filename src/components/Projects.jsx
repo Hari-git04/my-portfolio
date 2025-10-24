@@ -22,7 +22,7 @@ const projects = [
     title: "Portfolio Website",
     image: portfolio,
     github: "https://github.com/Hari-git04/my-portfolio",
-    live: "https://harigatten-portfolio.vercel.app/",
+    live: "https://myportfolio-4135.onrender.com",
   },
 ];
 
