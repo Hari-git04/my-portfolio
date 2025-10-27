@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import deloitte from "../assets/deloitte.jpg";
 import pythonImg from "../assets/python.jpg";
 import mernCourseImg from "../assets/merncourse.jpg";
 import reactCourseImg from "../assets/reactcourse.jpg";
@@ -9,6 +10,12 @@ import accenture from "../assets/accenture.png.jpg";
 import tata from "../assets/tata.jpg";
 
 const certificates = [
+  { 
+    title: "Technology Job Simulation", 
+    platform: "Deloitte Forage", 
+    date: "October 25, 2025", 
+    image: deloitte 
+  },
   { title: "Software Engineering Job Simulation", platform: "Accenture", date: "August 28, 2025", image: accenture },
   { title: "GenAI Powered Data Analytics Job Simulation", platform: "Tata Forage", date: "August 20, 2025", image: tata },
   { title: "Python Complete Course", platform: "Udemy", date: "August 16, 2025", image: pythonImg },
@@ -35,8 +42,6 @@ const Certificates = () => {
 
   return (
     <div className="relative w-full min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
-      
-      
       <div
         id="certificates"
         className="w-full flex flex-col items-center pt-28 py-12 px-4"
@@ -45,7 +50,6 @@ const Certificates = () => {
           Certificates
         </h2>
 
-      
         <div className="w-full flex justify-center">
           <div
             className="
@@ -74,7 +78,6 @@ const Certificates = () => {
                   className="w-full h-full object-contain bg-gray-100"
                 />
 
-                
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 p-2">
                   <p className="text-white text-xs sm:text-sm font-semibold text-center line-clamp-2 mb-2">{cert.title}</p>
                   <p className="text-white text-[10px] sm:text-xs">{cert.platform}</p>
